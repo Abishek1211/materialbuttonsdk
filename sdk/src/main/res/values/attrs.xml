@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        Custom XML attributes for all SdkButton subclasses.
+        Use the app: namespace in layouts.
+
+        Example:
+            <com.sdk.buttons.FilledButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                app:sdkButtonColor="#FF5722"
+                app:sdkCornerRadius="8dp"
+                app:sdkIconDrawable="@drawable/ic_login"/>
+    -->
+    <declare-styleable name="SdkButton">
+        <!-- Override corner radius (dimension). Default: 24dp pill shape. -->
+        <attr name="sdkCornerRadius"  format="dimension"/>
+        <!-- Override button background fill colour. -->
+        <attr name="sdkButtonColor"   format="color"/>
+        <!-- Override button label text colour. -->
+        <attr name="sdkTextColor"     format="color"/>
+        <!-- Set an icon drawable on the button. -->
+        <attr name="sdkIconDrawable"  format="reference"/>
+        <!-- Override stroke (border) width in dp. -->
+        <attr name="sdkStrokeWidth"   format="dimension"/>
+        <!-- Override stroke (border) colour. -->
+        <attr name="sdkStrokeColor"   format="color"/>
+    </declare-styleable>
+
+</resources>
+
